@@ -1,0 +1,12 @@
+# Configuración del editor local
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.iml
+
+# Regla comodín para ignorar carpetas de compilación en todos los microservicios
+**/target/
