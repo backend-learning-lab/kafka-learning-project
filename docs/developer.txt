@@ -1,0 +1,19 @@
+docker-compose down
+docker-compose up -d
+Para borrar todo de verdad necesitas docker-compose down -v
+
+curl -X POST http://localhost:8081/orders \
+  -H "Content-Type: application/json" \
+  -d '{"customerId":"cust-1","product":"Teclado mecanico","quantity":2,"totalAmount":59.90}'
+
+curl -X POST http://localhost:8081/orders \
+  -H "Content-Type: application/json" \
+  -d '{"customerId":"cust-2","product":"Mouse inalambrico","quantity":1,"totalAmount":25.00}'
+
+curl -X POST http://localhost:8081/orders \
+  -H "Content-Type: application/json" \
+  -d '{"customerId":"cust-3","product":"Mouse inalambrico","quantity":5,"totalAmount":45.00}'
+
+curl -X POST http://localhost:8081/orders \
+  -H "Content-Type: application/json" \
+  -d '{"customerId":"cust-4","product":"Monitor 24 pulgadas","quantity":2,"totalAmount":180.00}'
