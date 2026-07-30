@@ -17,3 +17,9 @@ curl -X POST http://localhost:8081/orders \
 curl -X POST http://localhost:8081/orders \
   -H "Content-Type: application/json" \
   -d '{"customerId":"cust-4","product":"Monitor 24 pulgadas","quantity":2,"totalAmount":180.00}'
+
+  curl -X POST http://localhost:8081/orders \
+  -H "Content-Type: application/json" \
+  -d '{"customerId":"cust-5","product":"Silla Gamer","quantity":1,"totalAmount":250.00}'
+
+  si vas a purgar, mejor hazlo con los servicios detenidos, no mientras un mensaje está reintentando
